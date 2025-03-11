@@ -94,7 +94,6 @@ useHead({
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
   .hero-section {
     height: 70vh;
   }
@@ -121,9 +120,6 @@ useHead({
     font-size: 1.5rem; 
   }
 
-  .w-[70%] {
-    width: 90%; 
-  }
 
   .flex.items-center {
     width: 100%; 
@@ -136,11 +132,13 @@ useHead({
   }
 
   .z-2 {
-    max-width: 300px; /
+    max-width: 300px; 
     top: 15%; 
-
+  }
   .svg {
     bottom: -5px; 
   }
+
 }
+
 </style>
