@@ -1,10 +1,11 @@
 <template>
-  <div class="landing-page font-sans text-white bg-gray-900 text-center">
+  <div class="landing-page font-sans text-white text-center">
     <HeroSection />
     <AboutSection />
     <GamesSection />
     <PartnersSection />
     <FooterSection />
+    <BackToTop />
   </div>
 </template>
 
@@ -14,14 +15,24 @@ import AboutSection from './src/components/AboutSection.vue';
 import GamesSection from './src/components/GamesSection.vue';
 import PartnersSection from './src/components/PartnersSection.vue';
 import FooterSection from './src/components/FooterSection.vue';
+import BackToTop from './src/components/BackToTop.vue';
 </script>
 
-<style scoped>
+<style>
 .landing-page {
-  font-family: Arial, sans-serif;
-  color: #fff;
-  background-image: url('/images/Rectangle 3462.png');
-  position: relative;
-  background-size: contain;
+  font-family: Montserrat, sans-serif;
 }
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('/assets/fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
 </style>
