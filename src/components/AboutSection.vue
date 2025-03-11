@@ -5,7 +5,7 @@
     </div>
     <div>
       <h2 class="text-4xl font-bold mb-4 text-black font-playfair">{{$t('aboutUs')}}</h2>
-      <p class="mb-12 text-gray-600">
+      <p class="mb-12 text-black">
         {{$t('des_about')}}
       </p>
       <div class="mb-4">

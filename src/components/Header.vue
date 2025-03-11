@@ -4,7 +4,6 @@
             <img src="../../public/images/White_logo.png" alt="Logo" class="h-12">
         </div>
 
-        <!-- Nút hamburger cho mobile -->
         <div class="hamburger-menu md:hidden cursor-pointer" @click="toggleMobileMenu">
             <img src="/images/icon/menu.png" alt="Menu" class="w-8 h-8">
         </div>
@@ -76,11 +75,11 @@ const toggleMobileMenu = () => {
 
 @media (min-width: 768px) {
   .hamburger-menu {
-    display: none; /* Ẩn icon hamburger trên giao diện desktop */
+    display: none;
   }
   
   .nav-menu {
-    display: flex; /* Hiển thị menu gốc trên giao diện desktop */
+    display: flex; 
   }
 }
 </style>

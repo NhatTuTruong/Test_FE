@@ -5,7 +5,7 @@
       <h1 class="text-[60px] font-bold mb-10 font-playfair">{{ $t('comingSoon') }}</h1>
       <div class="gap-6 mb-6 flex justify-center pb-16">
         <div class="bg-white rounded-md flex justify-center max-w-[500px]">
-          <div v-for="(value, label) in timeLeft" :key="label" class=" text-gray-900 p-4 rounded-md w-35">
+          <div v-for="(value, label) in timeLeft" :key="label" class=" text-black p-4 rounded-md w-35">
             <span class="text-4xl font-bold font-playfair">{{ value }}</span>
             <div class="text-sm uppercase mt-5 font-bold">{{ label }}</div>
           </div>
@@ -104,44 +104,43 @@ useHead({
   }
 
   .text-center h1 {
-    font-size: 2rem; /* Giảm kích thước tiêu đề */
+    font-size: 2rem; 
     margin-bottom: 1.5rem;
   }
 
   .gap-6 {
-    gap: 1rem; /* Giảm khoảng cách giữa các phần tử */
+    gap: 1rem; 
   }
 
   .bg-white .rounded-md {
-    max-width: 100%; /* Đảm bảo phần đếm ngược không tràn */
+    max-width: 100%; 
     width: 100%;
   }
 
   .text-2xl {
-    font-size: 1.5rem; /* Giảm kích thước số trong đếm ngược */
+    font-size: 1.5rem; 
   }
 
   .w-[70%] {
-    width: 90%; /* Phần văn bản co lại vừa màn hình */
+    width: 90%; 
   }
 
   .flex.items-center {
-    width: 100%; /* Đảm bảo chiều rộng tối đa */
+    width: 100%; 
   }
 
   input[type="email"] {
-    width: 100%; /* Input chiếm toàn bộ chiều rộng */
+    width: 100%; 
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
   }
 
   .z-2 {
-    max-width: 300px; /* Thu nhỏ hình ảnh Fairy */
-    top: 15%; /* Dời vị trí hợp lý hơn */
-  }
+    max-width: 300px; /
+    top: 15%; 
 
   .svg {
-    bottom: -5px; /* Đảm bảo phần sóng SVG liền mạch */
+    bottom: -5px; 
   }
 }
 </style>

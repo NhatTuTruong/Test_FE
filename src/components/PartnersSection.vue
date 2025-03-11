@@ -4,7 +4,6 @@
       <h2 class="text-center text-4xl font-bold mb-6 text-black font-playfair">{{$t('partners')}}</h2>
 
       <div class="relative">
-        <!-- Nút điều hướng trái -->
         <img src="/images/icon/arrow-square-left.png" alt="Previous"
           class="swiper-custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 w-10 cursor-pointer z-10" />
 
@@ -21,7 +20,6 @@
           </SwiperSlide>
         </Swiper>
 
-        <!-- Nút điều hướng phải -->
         <img src="/images/icon/arrow-square-right.png" alt="Next"
           class="swiper-custom-next absolute right-0 top-1/2 transform -translate-y-1/2 w-10 cursor-pointer z-10" />
       </div>
@@ -64,7 +62,7 @@ onMounted(() => {
   width: 100%;
 }
 
-/* Tùy chỉnh giao diện nút */
+
 .swiper-custom-prev,
 .swiper-custom-next {
   width: 40px;
