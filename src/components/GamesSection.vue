@@ -2,7 +2,7 @@
 <template>
   <div class="our-games pt-10 pb-20">
     <h2 class="text-center text-5xl font-bold mb-6 text-black font-playfair">{{$t('ourGames')}}</h2>
-    <p class="text-center mb-8  text-[#757575]  max-w-[800px] mx-auto">{{$t('ourGamesDescription')}}</p>
+    <p class="text-center mb-8  text-[#757575] p-2  max-w-[800px] mx-auto">{{$t('ourGamesDescription')}}</p>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-10 max-w-[1440px] mx-auto pb-20">
       <div v-for="(game, index) in games" :key="index" 

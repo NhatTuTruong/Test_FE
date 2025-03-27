@@ -1,6 +1,6 @@
 <template>
   <div class="about-us py-5 px-10 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1200px] text-left relative">
-    <div class="bonus hidden">
+    <div class="bonus hidden z-50">
       <img class="z-2 mt-[-200px] max-w-[350px] mx-auto h-auto object-cover" src="/images/Fairy.png" alt="">
     </div>
     <div>
@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div class="bg-[#EEEEEE] p-12 rounded-lg text-black">
+    <div class="bg-[#EEEEEE] p-12 rounded-lg part2 text-black">
       <div class="mb-4">
         <div class="flex justify-center">
           <div class="p-2 rounded-full mr-2"><img class="w-15" src="/images/icon/Group 12.png" alt=""></div>
@@ -79,6 +79,9 @@
 @media (max-width: 768px) {
   .bonus {
     display: block;
+  }
+  .part2 {
+    padding: 10px 0px;
   }
 }
 </style>
