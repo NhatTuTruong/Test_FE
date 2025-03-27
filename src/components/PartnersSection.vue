@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#F6F6F6]">
     <div class="our-partners py-20 max-w-[1200px] mx-auto">
-      <h2 class="text-center text-4xl font-bold mb-6 text-black font-playfair">{{$t('partners')}}</h2>
+      <h2 class="text-center text-5xl font-bold mb-15 text-black font-playfair">{{$t('partners')}}</h2>
 
       <div class="relative">
         <img src="/images/icon/arrow-square-left.png" alt="Previous"

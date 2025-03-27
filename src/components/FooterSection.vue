@@ -12,7 +12,7 @@
       </div>
 
       <div>
-        <h3 class="text-lg font-bold mb-10">{{$t('address')}}</h3>
+        <h3 class="text-2xl font-bold mb-10">{{$t('address')}}</h3>
         <div class="flex items-center gap-5 pb-15">
           <img src="/images/icon/Vector8.png" alt="">
           <p>{{$t('addressDetails1')}}<br>{{$t('addressDetails2')}}</p>
@@ -24,7 +24,7 @@
       </div>
 
       <div>
-        <h3 class="text-lg font-bold mb-10">{{$t('followUs')}}</h3>
+        <h3 class="text-2xl font-bold mb-10">{{$t('followUs')}}</h3>
         <p>{{$t('newsletter')}}</p>
         <div class="flex items-center mt-4 border border-white rounded-lg overflow-hidden">
           <input type="email" placeholder="Email" class="bg-transparent w-full px-4 py-2 text-white outline-none">

@@ -1,21 +1,23 @@
 <template>
   <HeaderComponent />
   <div class="hero-section relative h-[100vh] bg-cover bg-center flex flex-col items-center justify-center text-white">
-    <div class="text-center z-10">
-      <h1 class="text-[60px] font-bold mb-10 font-playfair">{{ $t('comingSoon') }}</h1>
-      <div class="gap-6 mb-6 flex justify-center pb-16">
-        <div class="bg-white rounded-md flex justify-center max-w-[500px]">
-          <div v-for="(value, label) in timeLeft" :key="label" class=" text-black p-4 rounded-md w-35">
-            <span class="text-4xl font-bold font-playfair">{{ value }}</span>
-            <div class="text-sm uppercase mt-5 font-bold">{{ label }}</div>
+    <div class="text-center z-10 frame-time">
+      <h1 class="text-[60px] font-bold mb-5 font-playfair">{{ $t('comingSoon') }}</h1>
+      <div class="gap-6 mb-4 flex justify-center pb-16">
+        <div class="bg-white rounded-[20px] flex justify-center max-w-[500px]">
+          <div v-for="(value, label) in timeLeft" :key="label" class=" text-black p-4 rounded-md w-35 flex">
+            <div>
+              <span class="text-5xl font-bold font-playfair">{{ value }}</span>
+              <div class="text-sm capitalize mt-2 font-bold">{{ label }}</div>
+            </div>
           </div>
         </div>
       </div>
       <div class="mb-4 flex justify-center">
-        <p class="w-[70%] justify-center">{{ $t('des_banner') }}</p>
+        <p class="w-[60%] justify-center">{{ $t('des_banner') }}</p>
       </div>
       <div class="flex items-center border rounded-md overflow-hidden max-w-100 mx-auto">
-        <input type="email" :placeholder="$t('text_input')" class="p-2 flex-1 outline-none text-black bg-white placeholder-gray-300">
+        <input type="email" :placeholder="$t('text_input')" class="p-2  flex-1 outline-none text-black bg-white placeholder-gray-300">
         <button class="text-black px-4 h-10 bg-white cursor-pointer">➔</button>
       </div>
       <img class="z-2 absolute top-25 left-0 max-w-[550px] h-auto object-cover" src="/images/Fairy.png" alt="">
@@ -37,7 +39,7 @@ const { t } = useI18n();
 const timeLeft = ref({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
 const countdown = () => {
-  const targetDate = new Date('2025-12-31T23:59:59').getTime();
+  const targetDate = new Date('2025-04-28T10:59:59').getTime();
 
   const updateCountdown = () => {
     const now = new Date().getTime();
@@ -75,13 +77,6 @@ useHead({
 </script>
 
 <style scoped>
-.hero-section {
-  color: #fff;
-  background-image: url('/images/Rectangle 3462.png');
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .hero-section {
   color: #fff;
