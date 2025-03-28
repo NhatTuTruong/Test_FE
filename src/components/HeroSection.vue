@@ -4,20 +4,25 @@
     <div class="text-center z-10 frame-time">
       <h1 class="text-[60px] font-bold mb-5 font-playfair">{{ $t('comingSoon') }}</h1>
       <div class="gap-6 mb-4 flex justify-center pb-16">
-        <div class="bg-white rounded-[20px] flex justify-center max-w-[500px]">
-          <div v-for="(value, label) in timeLeft" :key="label" class=" text-black p-4 rounded-md w-35 flex">
+        <div class="bg-white rounded-[20px] flex justify-center content-between max-w-[500px]">
+          <div v-for="(value, label, index) in timeLeft" :key="label"
+            class="text-black p-4 rounded-md w-35 flex justify-between">
             <div>
               <span class="text-5xl font-bold font-playfair">{{ value }}</span>
               <div class="text-sm capitalize mt-2 font-bold">{{ label }}</div>
+            </div>
+            <div v-if="index < Object.keys(timeLeft).length - 1" class="content-center text-4xl">
+              &#58;
             </div>
           </div>
         </div>
       </div>
       <div class="mb-4 flex justify-center">
-        <p class="w-[60%] justify-center">{{ $t('des_banner') }}</p>
+        <p class="w-[60%] justify-center des_banner">{{ $t('des_banner') }}</p>
       </div>
       <div class="flex items-center border rounded-md overflow-hidden max-w-100 mx-auto">
-        <input type="email" :placeholder="$t('text_input')" class="p-2  flex-1 outline-none text-black bg-white placeholder-gray-300">
+        <input type="email" :placeholder="$t('text_input')"
+          class="p-2  flex-1 outline-none text-black bg-white placeholder-gray-300">
         <button class="text-black px-4 h-10 bg-white cursor-pointer">➔</button>
       </div>
       <img class="z-2 absolute top-25 left-0 max-w-[550px] h-auto object-cover" src="/images/Fairy.png" alt="">
@@ -77,7 +82,6 @@ useHead({
 </script>
 
 <style scoped>
-
 .hero-section {
   color: #fff;
   background-image: url('/images/Rectangle 3462.png');
@@ -87,7 +91,7 @@ useHead({
 }
 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .hero-section {
     height: 70vh;
@@ -98,42 +102,45 @@ useHead({
   }
 
   .text-center h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 1.5rem;
   }
 
   .gap-6 {
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .bg-white .rounded-md {
-    max-width: 100%; 
+    max-width: 100%;
     width: 100%;
   }
 
   .text-2xl {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
 
   .flex.items-center {
-    width: 100%; 
+    width: 100%;
   }
 
   input[type="email"] {
-    width: 100%; 
+    width: 100%;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
   }
 
   .z-2 {
-    max-width: 300px; 
-    top: 15%; 
+    max-width: 300px;
+    top: 15%;
   }
+
   .svg {
-    bottom: -5px; 
+    bottom: -5px;
   }
 
+  .des_banner{
+    width: 100%;
+  }
 }
-
 </style>

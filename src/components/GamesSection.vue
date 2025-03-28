@@ -9,8 +9,8 @@
            :class="{'relative top-20': index % 4 === 1 || index % 4 === 3}" 
            class="relative bg-white rounded-lg overflow-hidden">
         <div class="h-120 bg-cover bg-center rounded-xl cursor-pointer" :style="{ backgroundImage: `url(${game.image})`, backgroundSize: `cover` }">
-          <div class="bg-opacity-50 w-full h-full flex flex-col justify-end p-4">
-            <h2 class="text-2xl font-bold text-white text-left">{{ game.title }}</h2>
+          <div class="bg-opacity-50 w-full h-full flex flex-col justify-end p-8">
+            <h2 class="text-[40px] font-bold text-white text-left">{{ game.title }}</h2>
             <p class="text-sm text-gray-300 text-left">{{ game.description }}</p>
           </div>
         </div>
